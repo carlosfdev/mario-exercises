@@ -24,6 +24,7 @@ public class TresEnRaya {
       boolean quierenSeguir = juego.jugadoresQuierenSeguir(scanner);
       if(quierenSeguir){
         juego.partidaTerminada = false;
+        juego.tablero = new char[5][5];
       }else{
         juego.juegoTerminado = true;
       };
@@ -152,7 +153,7 @@ public class TresEnRaya {
     }
   }
 
-  public void comprobarDiagonalesDeIzquierdaADerecha(char simbolo) {
+  public void comprobarDiagonalesDeIzquierdaADerecha(Jugador jugador) {
   }
   public void comprobarDiagonalesDeDerechaAIzquierda(char simbolo) {}
 
