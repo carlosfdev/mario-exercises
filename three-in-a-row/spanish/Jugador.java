@@ -3,11 +3,13 @@ import java.util.Scanner;
 class Jugador {
   String nombre;
   boolean tieneTresEnRaya;
-  int rondasGanadas = 0;
+  int partidasGanadas;
   char simbolo;
 
   public Jugador (char simbolo){
     this.simbolo = simbolo;
+    this.tieneTresEnRaya = false;
+    this.partidasGanadas = 0;
   }
 
   public int pedirFila(Scanner scanner){
